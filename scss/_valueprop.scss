@@ -1,0 +1,51 @@
+.value-prop {
+  width: 100%;
+  margin-top: 30px;
+  padding: $padding-screen-sm;
+
+  @media screen and (min-width: $screen-md) {
+    // text-align: center;
+    width: 70%;
+    margin: 30px auto;
+    padding: $padding-screen-md;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 40%;
+    margin: 7.2rem auto;
+  }
+
+  h2 {
+    text-align: center;
+    color: $primary-text-color;
+    font-family: $font-family-heading;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.6rem;
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 3.8rem;
+      line-height: 4.6rem;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 3rem;
+      line-height: 3.6rem;
+    }
+  }
+}
+
+.value-prop__line {
+  background-color: #ffd237;
+  height: 0.2rem;
+  width: 14rem;
+  margin: 32px auto 40px;
+
+  @media screen and (min-width: $screen-md) {
+    margin: 4.2rem auto;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin: 6.4rem auto;
+  }
+}

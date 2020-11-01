@@ -1,0 +1,27 @@
+@import 'card';
+
+.cards-container {
+  background-color: $primary-bg-color;
+  display: flex;
+  flex-direction: column;
+  padding: $padding-screen-sm;
+  width: 100%;
+  max-width: 120rem;
+  height: auto;
+  text-align: center;
+  // margin: 20px;
+
+  @media screen and (min-width: $screen-md) {
+    padding: $padding-screen-md;
+    // flex-flow: row nowrap;
+    // margin: 0 auto 7.2rem;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: $padding-screen-lg;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

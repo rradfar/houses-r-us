@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description"
+    content="The leading real estate marketplace. Search millions of for-sale and rental listings, compare home values and connect with local professionals.">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Houses-R-Us</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo-container">
+        <img src="assets/logo-no-name.png" alt="Houses-R-Us logo" class="navbar__logo">
+      </div>
+      <div class="navbar__menu-btn" id="menu-btn" onclick="onClickMenu()">
+        <div id="bar" class="bar"></div>
+        <div id="bar" class="bar"></div>
+        <div id="bar" class="bar"></div>
+      </div>
+      <ul class="navbar__items-container" id="navbar-items-container">
+        <li class="navbar__item"><a>Buy</a></li>
+        <li class="navbar__item"><a>Sell</a></li>
+        <li class="navbar__item"><a>Rent</a></li>
+        <li class="navbar__item"><a>Agents</a></li>
+        <li class="navbar__item"><a>About</a></li>
+      </ul>
+      <div class="navbar__login-container">
+        <ul>
+          <li class="navbar__login--login">
+            <a href="#">Sign in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero__cta-container">
+      <div class="hero__text-box">
+        <h1>You do the packing, <br />We do everything else!</h1>
+      </div>
+      <div class="hero__search-box">
+        <div class="hero__search-input">
+          <input type="text" name="search-box" class="search-term" autocomplete="none"
+            placeholder="Search an address, city, postal code, or MLS" value="">
+        </div>
+        <div class="hero__search-button">
+          <button class="btn"><img src="assets/icon-search.svg"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUE PROPOSITION -->
+  <div class="value-prop">
+    <h2>We have the most listings and constant updates.</h2>
+    <h2>So you’ll never miss out.</h2>
+  </div>
+  <div class="value-prop__line"></div>
+
+  <!-- CARDS -->
+  <div class="cards-container">
+    <div class="card-container">
+      <div class="card-image-container">
+        <img src="./assets/buy_home.svg" alt="" />
+      </div>
+      <div class="card-text-container">
+        <h3>Buy a home</h3>
+        <p>
+          Find your place with an immersive photo experience and the most
+          listings, including things you won’t find anywhere else.
+        </p>
+        <button class="card-button">Search homes</button>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card-image-container">
+        <img src="./assets/sell_home.svg" alt="" />
+      </div>
+      <div class="card-text-container">
+        <h3>Sell a home</h3>
+        <p>
+          Whether you sell with our new offers or take another approach,
+          we’ll help you navigate the path to a successful sale.
+        </p>
+        <button class="card-button">See your options</button>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card-image-container">
+        <img src="./assets/rent_home.svg" alt="" />
+      </div>
+      <div class="card-text-container">
+        <h3>Rent a home</h3>
+        <p>
+          We’re creating a seamless online experience – from shopping on the
+          largest rental network, to applying, to paying rent.
+        </p>
+        <button class="card-button">Find rentals</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-social">
+      <h3 class="footer-social__header">Connect with us</h3>
+      <div class="footer-social__links">
+        <a href="#"><img src="./assets/icon-fb.svg" alt="Facebook icon"></a>
+        <a href="#"><img src="./assets/icon-tw.svg" alt="Twitter icon"></a>
+        <a href="#"><img src="./assets/icon-insta.svg" alt="Instagram icon"></a>
+        <a href="#"><img src="./assets/icon-ld.svg" alt="LinkedIn icon"></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <span>&copy; 2020 Houses-R-Us, LLC. All rights reserved.</span>
+    </div>
+    <div class="footer-links">
+      <span><a href="#">Terms of Use</a></span> | <span><a href="#">Privacy Policy</a></span>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
