@@ -1,21 +1,135 @@
-.footer {
+footer {
+  padding: $padding-screen-sm;
+
+  @media screen and (min-width: $screen-md) {
+    padding: $padding-screen-md;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: $padding-screen-lg;
+  }
+}
+
+.footer-links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+
+  @media screen and (min-width: $screen-md) {
+    flex-direction: row;
+  }
+}
+
+.footer-logo {
+  width: 100px;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.footer-terms {
+  margin-top: 2rem;
+
+  @media screen and (min-width: $screen-md) {
+    margin-left: 9rem;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: $primary-text-color;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+    font-weight: $weight-bold;
+    margin-bottom: 2rem;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    display: inline-block;
+    width: 14px;
+    height: auto;
+    margin-right: 0.2rem;
+  }
+
+  span {
+    color: $color-blue-primary;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: $weight-normal;
+  }
+}
+
+.footer-contact {
+  margin-top: 2rem;
+
+  @media screen and (min-width: $screen-md) {
+    margin-left: 9rem;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: $primary-text-color;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+    font-weight: $weight-bold;
+    margin-bottom: 2rem;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  img {
+    display: inline-block;
+    width: 14px;
+    height: auto;
+    margin-right: 0.8rem;
+  }
+
+  span {
+    color: $primary-text-color;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: $weight-normal;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: $padding-screen-sm;
+  padding-top: 3rem;
+  background-color: #fff;
+
+  @media screen and (min-width: $screen-md) {
+    flex-flow: row wrap;
+  }
 }
 
 .footer-social {
-  &__header {
-    font-size: 2rem;
-    line-height: 2.4rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__links {
-    margin: 10px 0 30px;
+  &-links {
     a {
       display: inline-block;
       margin-right: 10px;
@@ -25,20 +139,22 @@
       }
 
       &:hover {
-        border-bottom: $secondary-bg-color 2px solid;
+        border-bottom: $secondary-bg-color 1px solid;
       }
+    }
+
+    img {
+      display: inline-block;
+      width: 24px;
     }
   }
 }
 
 .footer-copyright {
   text-align: center;
-}
+  margin-top: 2rem;
 
-.footer-links {
-  margin-top: 8px;
-  a {
-    text-decoration: none;
-    color: $secondary-bg-color;
+  @media screen and (min-width: $screen-md) {
+    margin-top: 0;
   }
 }
