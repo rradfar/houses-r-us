@@ -59,6 +59,17 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: transform 0.3s linear;
+
+    &:visited,
+    &:active {
+      color: $color-brand-primary;
+    }
+
+    &:hover {
+      background-color: $color-white-secondary;
+      transform: scale(1.1);
+    }
   }
 
   img {
@@ -133,13 +144,14 @@ footer {
     a {
       display: inline-block;
       margin-right: 1rem;
+      transition: transform 0.3s linear;
 
       &:last-of-type {
         margin-right: 0;
       }
 
       &:hover {
-        border-bottom: $color-brand-primary 1px solid;
+        transform: scale(1.1);
       }
     }
 
