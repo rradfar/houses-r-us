@@ -1,4 +1,7 @@
-function onClickMenu() {
-  document.getElementById('menu-btn').classList.toggle('change');
-  document.getElementById('navbar-items-container').classList.toggle('change');
-}
+const menuBtn = document.getElementById('menu-btn');
+const menuContainer = document.getElementById('navbar-items-container');
+
+const toggleMenu = () => {
+  menuBtn.classList.toggle('open');
+  menuContainer.classList.toggle('open');
+};
