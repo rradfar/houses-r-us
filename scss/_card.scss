@@ -11,11 +11,6 @@
   box-sizing: border-box;
   transition: all 300ms ease-in-out 0s;
 
-  @media only screen and (min-width: $screen-md) {
-    // flex-basis: 70rem;
-    // text-align: left;
-  }
-
   @media only screen and (min-width: $screen-lg) {
     margin: 0;
     margin-right: 2rem;
@@ -23,7 +18,7 @@
     flex-basis: 28rem;
     flex-grow: 2;
     display: inline-block;
-    min-height: 520px;
+    min-height: 52rem;
     &:last-of-type {
       margin-right: 0;
     }
@@ -39,8 +34,8 @@
     }
 
     button {
-      background-color: $secondary-bg-color;
-      color: #fff;
+      background-color: $color-brand-primary;
+      color: $color-white-primary;
       border-color: transparent;
     }
   }
@@ -71,10 +66,8 @@
 
   img {
     height: 18rem;
-    border: 0;
-
     width: 100%;
-    // height: auto;
+    border: 0;
   }
 }
 
@@ -83,13 +76,6 @@
   display: block;
   text-align: center;
   padding-top: 2rem;
-
-  @media only screen and (min-width: $screen-md) {
-    // max-width: 50%;
-    // display: inline-block;
-    // margin-left: 2rem;
-    // text-align: left;
-  }
 
   @media only screen and (min-width: $screen-lg) {
     display: block;
@@ -122,17 +108,11 @@
   padding: 1rem 2rem;
   height: 4.2rem;
   cursor: pointer;
-  color: $secondary-bg-color;
-  background-color: #fff;
+  color: $color-brand-primary;
+  background-color: $color-white-primary;
   border: 0.1rem solid #a7a6ab;
   border-radius: 0.3rem;
-  // font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 2.2rem;
-
-  // &:hover {
-  //   background-color: $secondary-bg-color;
-  //   color: #fff;
-  // }
 }

@@ -12,8 +12,16 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: $primary-bg-color;
-  color: $primary-text-color;
+  background-color: $color-white-primary;
+  color: $color-black-secondary;
   font-family: $font-family-body;
   font-weight: $weight-normal;
+}
+
+.mt6 {
+  margin-top: 6rem !important;
+}
+
+.mb6 {
+  margin-bottom: 6rem !important;
 }

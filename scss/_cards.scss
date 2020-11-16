@@ -1,7 +1,7 @@
 @import 'card';
 
 .cards-container {
-  background-color: $primary-bg-color;
+  background-color: $color-white-secondary;
   display: flex;
   flex-direction: column;
   padding: $padding-screen-sm;
@@ -9,12 +9,9 @@
   max-width: 120rem;
   height: auto;
   text-align: center;
-  // margin: 20px;
 
   @media screen and (min-width: $screen-md) {
     padding: $padding-screen-md;
-    // flex-flow: row nowrap;
-    // margin: 0 auto 7.2rem;
   }
 
   @media screen and (min-width: $screen-lg) {
